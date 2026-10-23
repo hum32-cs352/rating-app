@@ -1,0 +1,71 @@
+A02 TEST RESULTS - Hum32@CS352 | Team A02 The Innovators
+
+=== Run 1: local stage (before Git) ===
+Tester: Anas Arshad
+Date: 22 Oct 2026
+JDK version: 21.0.12.1 (javac 21.0.12.1)
+Command: handoff\A02\run_student.bat
+Result: PASS (14 of 14 checks)
+
+=== Hum32@CS352 | A02 StudentDriver ===
+Student: B26000000001 | Ali Demo | A
+[PASS] Input preserved exactly
+[PASS] Same seat: equals and hashCode agree
+[PASS] HashSet size after duplicate: 1
+[PASS] Copy/clone objects are distinct and equal
+[PASS] Invalid Student inputs rejected
+[PASS] Student counter: +6; failed attempts: +0
+[PASS] Array copies: new arrays; shared Student references
+[PASS] Sections A and B share one Faculty
+[PASS] Section C begins unassigned (test state)
+[PASS] Office keeps Student/Section references
+[PASS] Assigning C is visible through its Office record
+[PASS] Replacing C does not change A or B
+[PASS] ArrayList<Office> is held in the driver only
+[PASS] Invalid Faculty, Section and Office inputs rejected
+A02 READY | Identity + teaching relationships verified
+
+=== Run 2: fresh clone, branch team/A02 ===
+Tester: Anas Arshad
+Date: 23 Oct 2026
+JDK version: 21.0.12.1 (javac 21.0.12.1)
+Commands: .\run.bat  then  .\handoff\A02\run_student.bat
+Result: PASS (run.bat: starter ran successfully; run_student.bat: 14 of 14 checks)
+
+Hum32@CS352 starter runs successfully.
+
+=== Hum32@CS352 | A02 StudentDriver ===
+Student: B26000000001 | Ali Demo | A
+[PASS] Input preserved exactly
+[PASS] Same seat: equals and hashCode agree
+[PASS] HashSet size after duplicate: 1
+[PASS] Copy/clone objects are distinct and equal
+[PASS] Invalid Student inputs rejected
+[PASS] Student counter: +6; failed attempts: +0
+[PASS] Array copies: new arrays; shared Student references
+[PASS] Sections A and B share one Faculty
+[PASS] Section C begins unassigned (test state)
+[PASS] Office keeps Student/Section references
+[PASS] Assigning C is visible through its Office record
+[PASS] Replacing C does not change A or B
+[PASS] ArrayList<Office> is held in the driver only
+[PASS] Invalid Faculty, Section and Office inputs rejected
+A02 READY | Identity + teaching relationships verified
+
+=== Failures and corrections ===
+1. First run failed: "null seat: expected NullPointerException but got
+   IllegalArgumentException" (Student.java).
+   Fix: null checks now use Objects.requireNonNull; IllegalArgumentException
+   is kept for blank text.
+2. Output showed "Student: Student: B26..." because toString() added its own
+   prefix. Fix: toString() returns only "seatNo | name | section".
+3. Same null-check failure in Faculty.java ("null facultyId") and
+   Section.java ("null courseCode"). Fix: same as item 1. Office.java
+   needed no change.
+4. VS Code warning "Object equals null is never true" in StudentDriver.java.
+   Fix: the null is stored in a local variable first. The check is unchanged.
+After these fixes every run passed.
+
+=== Independent test ===
+Hafiz Muhammad Ahsan's test of the published branch (fresh clone, commit ID
+and full output of both scripts) is posted on the pull request.

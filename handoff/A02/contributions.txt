@@ -1,0 +1,23 @@
+A02 contributions - Team A02 The Innovators (Hum32@CS352)
+
+Anas Arshad (publisher)
+- Student.java
+- Combined all files, created the team/A02 branch, committed, pushed
+  and opened the pull request.
+- test-results.txt, run_student.bat and the UML diagram
+
+Suleman
+- SectionName.java and FacultyType.java
+- Checked both enums and the source file names.
+
+Zaid Khan
+- StudentDriver.java
+- demo-input.txt and expected_output.txt
+
+Muhammad Arqam
+- Faculty.java and Section.java
+- Checked their signatures and teacher assignment.
+
+Hafiz Muhammad Ahsan
+- Office.java
+- Tested a fresh clone of the published branch.
