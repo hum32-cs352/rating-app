@@ -1,0 +1,17 @@
+=== Hum32@CS352 | A02 StudentDriver ===
+Student: B26000000001 | Ali Demo | A
+[PASS] Input preserved exactly
+[PASS] Same seat: equals and hashCode agree
+[PASS] HashSet size after duplicate: 1
+[PASS] Copy/clone objects are distinct and equal
+[PASS] Invalid Student inputs rejected
+[PASS] Student counter: +6; failed attempts: +0
+[PASS] Array copies: new arrays; shared Student references
+[PASS] Sections A and B share one Faculty
+[PASS] Section C begins unassigned (test state)
+[PASS] Office keeps Student/Section references
+[PASS] Assigning C is visible through its Office record
+[PASS] Replacing C does not change A or B
+[PASS] ArrayList<Office> is held in the driver only
+[PASS] Invalid Faculty, Section and Office inputs rejected
+A02 READY | Identity + teaching relationships verified
