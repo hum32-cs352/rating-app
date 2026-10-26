@@ -1,0 +1,31 @@
+Group B05 Contributions Log - Reflection Module
+1. Aleeza Fatima
+- Role/Task: Main publisher and integration workflow manager. Developed core SelfReflection logic,
+input validation, and defensive copying of answer maps.
+- Files contributed: src/domain/reflection/SelfReflection.java
+- Handoff Documentation: README.md
+
+2. Saadia
+- Role/Task: Designed and implemented the ReflectionQuestion enum, specifying survey criteria, valid
+option lists, and answer validation rules. Acted as the Independent Tester for the published version by
+cloning the repository, running local tests, and posting verification results on the PR.
+- Files contributed: src/domain/reflection/ReflectionQuestion.java
+- Handoff Documentation: handoff/B05/API_REGISTER.md
+
+3. Diya Ghazal
+- Role/Task: Implemented the ReflectionMatrixView class implementing Matrix<String>, managing
+tabular data layout, unmodifiable lists, and completion statistics.
+- Files contributed: src/domain/reflection/ReflectionMatrixView.java
+
+4. Syeda Zurriyah
+- Role/Task: Developed the StudentPortfolio class to encapsulate student metadata, term references,
+course mapping, and reflection instances.
+- Files contributed: src/domain/reflection/StudentPortfolio.java
+- Handoff Documentation: handoff/B05/B05_UML.drawio
+
+5. Bibi Ayesha
+- Role/Task: Implemented the ReflectionDriver CLI application, handling interactive terminal inputs and
+matrix output formatting. Utilized the Matrix interface, created the project run script, and generated
+sample output for local verification.
+- Files contributed: src/domain/reflection/Matrix.java, src/domain/reflection/ReflectionDriver.java
+- Handoff Documentation: handoff/B05/run_demo.bat, handoff/B05/observed_output.txt
