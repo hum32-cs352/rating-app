@@ -43,10 +43,10 @@ public final class StudentDriver {
                 "Input preserved exactly");
 
         Object nothing = null;
-            check(original.equals(sameSeat) && sameSeat.equals(original)
-             && original.hashCode() == sameSeat.hashCode()
-             && !original.equals(nothing),
-             "Same seat: equals and hashCode agree");
+        check(original.equals(sameSeat) && sameSeat.equals(original)
+                && original.hashCode() == sameSeat.hashCode()
+                && !original.equals(nothing),
+                "Same seat: equals and hashCode agree");
 
         Set<Student> set = new HashSet<>();
         set.add(original);
@@ -92,6 +92,66 @@ public final class StudentDriver {
         int countAfterInvalid = Student.getCreatedCount();
         check((countAfterValid - countBefore) == 6 && (countAfterInvalid - countAfterValid) == 0,
                 "Student counter: +6; failed attempts: +0");
+
+        // ---- Enrolment number (version 2) ----
+        // Fictional enrolment numbers only.
+        Student noEnrol = new Student("B26000000002", "No Enrol", SectionName.B);
+        Student nullEnrol = new Student("B26000000003", "Null Enrol", SectionName.A, null);
+        Student withEnrol = new Student("B26000000004", "With Enrol", SectionName.C, "0012345");
+        check(noEnrol.getEnrolmentNo() == null
+                && nullEnrol.getEnrolmentNo() == null
+                && withEnrol.getEnrolmentNo() != null,
+                "Old constructor and null enrolment store null; new constructor stores a value");
+
+        String leadingZeros = "0012345";
+        String innerSpaces = "26 CS 0042";
+        Student exact1 = new Student("B26000000005", "Zero Lead", SectionName.A, leadingZeros);
+        Student exact2 = new Student("B26000000006", "Inner Space", SectionName.B, innerSpaces);
+        check(exact1.getEnrolmentNo().equals("0012345")
+                && exact1.getEnrolmentNo().length() == 7
+                && exact2.getEnrolmentNo().equals("26 CS 0042"),
+                "Enrolment text preserved exactly (leading zeros kept)");
+
+        int countBeforeBadEnrol = Student.getCreatedCount();
+        int rejectedBeforeEnrol = rejected;
+        expectThrows(IllegalArgumentException.class,
+                () -> new Student("S1", "Name", SectionName.A, ""), "empty enrolment");
+        expectThrows(IllegalArgumentException.class,
+                () -> new Student("S1", "Name", SectionName.A, "   "), "blank enrolment");
+        expectThrows(IllegalArgumentException.class,
+                () -> new Student("S1", "Name", SectionName.A, " 0012345"), "leading space");
+        expectThrows(IllegalArgumentException.class,
+                () -> new Student("S1", "Name", SectionName.A, "0012345 "), "trailing space");
+        expectThrows(IllegalArgumentException.class,
+                () -> new Student("S1", "Name", SectionName.A, "\t0012345"), "leading tab");
+        expectThrows(IllegalArgumentException.class,
+                () -> new Student("S1", "Name", SectionName.A, "0012345\n"), "trailing newline");
+        check(rejected - rejectedBeforeEnrol == 6
+                && Student.getCreatedCount() == countBeforeBadEnrol,
+                "Missing enrolment accepted; blank/whitespace rejected; failed attempts: +0");
+
+        Student[] enrolCopies = {
+                new Student(withEnrol), withEnrol.clone(),
+                withEnrol.shallowCopy(), withEnrol.deepCopy() };
+        Student[] nullCopies = {
+                new Student(noEnrol), noEnrol.clone(),
+                noEnrol.shallowCopy(), noEnrol.deepCopy() };
+        boolean allKept = true;
+        for (Student c : enrolCopies) {
+            allKept = allKept && c != withEnrol && "0012345".equals(c.getEnrolmentNo());
+        }
+        for (Student c : nullCopies) {
+            allKept = allKept && c != noEnrol && c.getEnrolmentNo() == null;
+        }
+        check(allKept, "Enrolment preserved by all four copy routes");
+
+        Student seatA1 = new Student("B26000000009", "First Name", SectionName.A, "0000001");
+        Student seatA2 = new Student("B26000000009", "Second Name", SectionName.B, "0000002");
+        Student seatB = new Student("B26000000010", "First Name", SectionName.A, "0000001");
+        check(seatA1.equals(seatA2) && seatA2.equals(seatA1)
+                && seatA1.hashCode() == seatA2.hashCode()
+                && !seatA1.equals(seatB) && !seatB.equals(seatA1),
+                "Equality uses seat only: same seat equal; different seats unequal");
 
         // ---- Array copies ----
         int[] ints = { 1, 2, 3 };

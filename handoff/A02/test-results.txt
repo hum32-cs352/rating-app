@@ -1,5 +1,6 @@
 A02 TEST RESULTS - Hum32@CS352 | Team A02 The Innovators
 
+=== Version 1 (before the enrolment number, 14 checks) ===
 === Run 1: local stage (before Git) ===
 Tester: Anas Arshad
 Date: 22 Oct 2026
@@ -25,6 +26,7 @@ Student: B26000000001 | Ali Demo | A
 [PASS] Invalid Faculty, Section and Office inputs rejected
 A02 READY | Identity + teaching relationships verified
 
+=== Version 1 (before the enrolment number, 14 checks) ===
 === Run 2: fresh clone, branch team/A02 ===
 Tester: Anas Arshad
 Date: 23 Oct 2026
@@ -66,6 +68,92 @@ A02 READY | Identity + teaching relationships verified
    Fix: the null is stored in a local variable first. The check is unchanged.
 After these fixes every run passed.
 
+=== Version 1 (before the enrolment number, 14 checks) ===
 === Independent test ===
 Hafiz Muhammad Ahsan's test of the published branch (fresh clone, commit ID
 and full output of both scripts) is posted on the pull request.
+
+=== VERSION 2: enrolment number revision ===
+Tester: Anas Arshad
+Date: 27 Oct 2026
+JDK version: 21.0.12.1 (javac 21.0.12.1)
+Location: rating-app clone, branch team/A02
+Note: JDK 17 verification is pending (Hafiz Muhammad Ahsan).
+
+Summary
+Test                                   Observed result                          PASS/FAIL
+StudentDriver (19 checks)              All 19 checks printed [PASS]             PASS
+  - enrolment checks (5 new)           null stored, exact text, rejection,      PASS
+                                       four copy routes, seat-only equality
+FacultyDriver                          Both types, sections A/B/C, INVALID      PASS
+                                       caught with an error message
+SectionOfficeDriver (20 checks)        All 20 checks printed [PASS]             PASS
+
+--- Run: .\handoff\A02\run_student.bat ---
+=== Hum32@CS352 | A02 StudentDriver ===
+Student: B26000000001 | Ali Demo | A
+[PASS] Input preserved exactly
+[PASS] Same seat: equals and hashCode agree
+[PASS] HashSet size after duplicate: 1
+[PASS] Copy/clone objects are distinct and equal
+[PASS] Invalid Student inputs rejected
+[PASS] Student counter: +6; failed attempts: +0
+[PASS] Old constructor and null enrolment store null; new constructor stores a value
+[PASS] Enrolment text preserved exactly (leading zeros kept)
+[PASS] Missing enrolment accepted; blank/whitespace rejected; failed attempts: +0
+[PASS] Enrolment preserved by all four copy routes
+[PASS] Equality uses seat only: same seat equal; different seats unequal
+[PASS] Array copies: new arrays; shared Student references
+[PASS] Sections A and B share one Faculty
+[PASS] Section C begins unassigned (test state)
+[PASS] Office keeps Student/Section references
+[PASS] Assigning C is visible through its Office record
+[PASS] Replacing C does not change A or B
+[PASS] ArrayList<Office> is held in the driver only
+[PASS] Invalid Faculty, Section and Office inputs rejected
+A02 READY | Identity + teaching relationships verified
+
+--- Run: java -cp out\A02 domain.FacultyDriver ---
+=== A02 FacultyDriver ===
+Permanent faculty: PERMANENT
+Visiting faculty: VISITING
+Section A selected
+Section B selected
+Section C selected
+Invalid faculty type: INVALID - not a valid FacultyType
+FacultyDriver tests completed.
+
+--- Run: java -cp out\A02 domain.SectionOfficeDriver ---
+===> Hum32@CS352 | A02 SectionOfficeDriver
+[PASS] Section A references shared Faculty
+[PASS] Section B references shared Faculty
+[PASS] Sections A and B share the same Faculty object
+[PASS] Section C begins unassigned (test state)
+[PASS] Office keeps Student reference
+[PASS] Office keeps Section reference
+[PASS] Office sees C unassigned at start
+[PASS] Assigning C is visible through its Office record
+[PASS] Assigning C did not change A
+[PASS] Assigning C did not change B
+[PASS] Replacing C is visible through its Office record
+[PASS] Replacing C does not change A
+[PASS] Replacing C does not change B
+[PASS] Restoring C is visible through its Office record
+[PASS] Restoring C does not change A
+[PASS] Restoring C does not change B
+[PASS] assignFaculty(null) rejected
+[PASS] C still points to Humera after rejected null assignment
+[PASS] ArrayList<Office> is held in the driver only
+[PASS] Driver record references the same Section C
+--- Objects ---
+Student : B26000000001 | Ali Demo | A
+Faculty : HUMERA_TARIQ | Humera Tariq | Assistant Professor | PERMANENT
+Visitor : DEMO_VISITING | Visiting Demo | Visiting Lecturer | VISITING
+SectionA: CS-352 | 2026 | Semester 2 | Section A | Humera Tariq
+SectionB: CS-352 | 2026 | Semester 2 | Section B | Humera Tariq
+SectionC: CS-352 | 2026 | Semester 2 | Section C | Humera Tariq
+Office  : Office{student=B26000000001 | Ali Demo | A, section=CS-352 | 2026 | Semester 2 | Section C | Humera Tariq}
+A02 SectionOffice READY | shared-reference checks passed
+
+Failures in this run: None.
+JDK 17 verification and the independent fresh-clone test: pending (Hafiz Muhammad Ahsan, on PR #2).

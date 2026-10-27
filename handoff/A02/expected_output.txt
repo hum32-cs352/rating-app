@@ -6,6 +6,11 @@ Student: B26000000001 | Ali Demo | A
 [PASS] Copy/clone objects are distinct and equal
 [PASS] Invalid Student inputs rejected
 [PASS] Student counter: +6; failed attempts: +0
+[PASS] Old constructor and null enrolment store null; new constructor stores a value
+[PASS] Enrolment text preserved exactly (leading zeros kept)
+[PASS] Missing enrolment accepted; blank/whitespace rejected; failed attempts: +0
+[PASS] Enrolment preserved by all four copy routes
+[PASS] Equality uses seat only: same seat equal; different seats unequal
 [PASS] Array copies: new arrays; shared Student references
 [PASS] Sections A and B share one Faculty
 [PASS] Section C begins unassigned (test state)

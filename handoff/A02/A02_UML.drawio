@@ -1,0 +1,252 @@
+<mxfile host="app.diagrams.net" agent="Claude" version="24.7.0">
+  <diagram name="A02 UML" id="a02-uml">
+    <mxGraphModel dx="1800" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- TITLE -->
+        <mxCell id="title" value="Hum32@CS352 | A02 UML | Team A02 The Innovators" style="text;html=1;fontSize=22;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="900" y="20" width="1000" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- ================= StudentDriver ================= -->
+        <mxCell id="cSD" value="StudentDriver&lt;br&gt;&lt;span style='font-weight:normal;font-size:12px'&gt;{final}&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;startSize=48;collapsible=0;html=1;whiteSpace=wrap;fontSize=14;fillColor=#FFF2CC;strokeColor=#D6B656;swimlaneFillColor=#FFFFFF;marginBottom=0;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="600" height="162" as="geometry"/>
+        </mxCell>
+        <mxCell id="sd_f" value="&lt;div style='line-height:18px'&gt;&lt;u&gt;- rejected: int = 0&lt;/u&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cSD">
+          <mxGeometry y="48" width="600" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="sd_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;html=1;" vertex="1" parent="cSD">
+          <mxGeometry y="74" width="600" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="sd_m" value="&lt;div style='line-height:18px'&gt;- StudentDriver()&lt;br&gt;&lt;u&gt;+ main(args: String[]): void&lt;/u&gt;&lt;br&gt;&lt;u&gt;- check(condition: boolean, label: String): void&lt;/u&gt;&lt;br&gt;&lt;u&gt;- expectThrows(expected: Class&amp;lt;? extends Throwable&amp;gt;, action: Runnable, what: String): void&lt;/u&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cSD">
+          <mxGeometry y="82" width="600" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- ================= FacultyDriver ================= -->
+        <mxCell id="cFD" value="FacultyDriver&lt;br&gt;&lt;span style='font-weight:normal;font-size:12px'&gt;{final}&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;startSize=48;collapsible=0;html=1;whiteSpace=wrap;fontSize=14;fillColor=#FFF2CC;strokeColor=#D6B656;swimlaneFillColor=#FFFFFF;marginBottom=0;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="110" width="300" height="122" as="geometry"/>
+        </mxCell>
+        <mxCell id="fd_f" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cFD">
+          <mxGeometry y="48" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="fd_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;html=1;" vertex="1" parent="cFD">
+          <mxGeometry y="70" width="300" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="fd_m" value="&lt;div style='line-height:18px'&gt;- FacultyDriver()&lt;br&gt;&lt;u&gt;+ main(args: String[]): void&lt;/u&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cFD">
+          <mxGeometry y="78" width="300" height="44" as="geometry"/>
+        </mxCell>
+
+        <!-- ================= SectionOfficeDriver ================= -->
+        <mxCell id="cSOD" value="SectionOfficeDriver" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;startSize=30;collapsible=0;html=1;whiteSpace=wrap;fontSize=14;fillColor=#FFF2CC;strokeColor=#D6B656;swimlaneFillColor=#FFFFFF;marginBottom=0;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1420" width="500" height="104" as="geometry"/>
+        </mxCell>
+        <mxCell id="sod_f" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cSOD">
+          <mxGeometry y="30" width="500" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="sod_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;html=1;" vertex="1" parent="cSOD">
+          <mxGeometry y="52" width="500" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="sod_m" value="&lt;div style='line-height:18px'&gt;&lt;u&gt;- check(condition: boolean, label: String): void&lt;/u&gt;&lt;br&gt;&lt;u&gt;+ main(args: String[]): void&lt;/u&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cSOD">
+          <mxGeometry y="60" width="500" height="44" as="geometry"/>
+        </mxCell>
+
+        <!-- ================= Student ================= -->
+        <mxCell id="cStudent" value="Student&lt;br&gt;&lt;span style='font-weight:normal;font-size:12px'&gt;{final}&lt;br&gt;implements Cloneable&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;startSize=66;collapsible=0;html=1;whiteSpace=wrap;fontSize=14;fillColor=#DAE8FC;strokeColor=#6C8EBF;swimlaneFillColor=#FFFFFF;marginBottom=0;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="520" width="560" height="432" as="geometry"/>
+        </mxCell>
+        <mxCell id="st_f" value="&lt;div style='line-height:18px'&gt;- seatNo: String {final}&lt;br&gt;- name: String {final}&lt;br&gt;- sectionName: SectionName {final}&lt;br&gt;- enrolmentNo: String {final}&lt;br&gt;&lt;u&gt;- createdCount: int = 0&lt;/u&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cStudent">
+          <mxGeometry y="66" width="560" height="98" as="geometry"/>
+        </mxCell>
+        <mxCell id="st_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;html=1;" vertex="1" parent="cStudent">
+          <mxGeometry y="164" width="560" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="st_m" value="&lt;div style='line-height:18px'&gt;+ Student(seatNo: String, name: String, sectionName: SectionName)&lt;br&gt;+ Student(seatNo: String, name: String, sectionName: SectionName, enrolmentNo: String)&lt;br&gt;+ Student(other: Student)&lt;br&gt;+ getSeatNo(): String&lt;br&gt;+ getName(): String&lt;br&gt;+ getSectionName(): SectionName&lt;br&gt;+ getEnrolmentNo(): String&lt;br&gt;+ clone(): Student&lt;br&gt;+ shallowCopy(): Student&lt;br&gt;+ deepCopy(): Student&lt;br&gt;+ equals(o: Object): boolean&lt;br&gt;+ hashCode(): int&lt;br&gt;+ toString(): String&lt;br&gt;&lt;u&gt;+ getCreatedCount(): int&lt;/u&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cStudent">
+          <mxGeometry y="172" width="560" height="260" as="geometry"/>
+        </mxCell>
+
+        <!-- ================= SectionName (enum) ================= -->
+        <mxCell id="eSN" value="&lt;span style='font-weight:normal;font-size:12px'&gt;&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;/span&gt;&lt;br&gt;SectionName" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;startSize=48;collapsible=0;html=1;whiteSpace=wrap;fontSize=14;fillColor=#E1D5E7;strokeColor=#9673A6;swimlaneFillColor=#FFFFFF;marginBottom=0;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="770" y="600" width="180" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="eSN_c" value="&lt;div style='line-height:18px'&gt;A&lt;br&gt;B&lt;br&gt;C&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="eSN">
+          <mxGeometry y="48" width="180" height="62" as="geometry"/>
+        </mxCell>
+
+        <!-- ================= Section ================= -->
+        <mxCell id="cSection" value="Section&lt;br&gt;&lt;span style='font-weight:normal;font-size:12px'&gt;{final}&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;startSize=48;collapsible=0;html=1;whiteSpace=wrap;fontSize=14;fillColor=#DAE8FC;strokeColor=#6C8EBF;swimlaneFillColor=#FFFFFF;marginBottom=0;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="520" width="560" height="324" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec_f" value="&lt;div style='line-height:18px'&gt;- courseCode: String {final}&lt;br&gt;- academicYear: int {final}&lt;br&gt;- semester: int {final}&lt;br&gt;- sectionName: SectionName {final}&lt;br&gt;- faculty: Faculty&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cSection">
+          <mxGeometry y="48" width="560" height="98" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;html=1;" vertex="1" parent="cSection">
+          <mxGeometry y="146" width="560" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec_m" value="&lt;div style='line-height:18px'&gt;+ Section(courseCode: String, academicYear: int, semester: int, sectionName: SectionName)&lt;br&gt;+ getCourseCode(): String&lt;br&gt;+ getAcademicYear(): int&lt;br&gt;+ getSemester(): int&lt;br&gt;+ getSectionName(): SectionName&lt;br&gt;+ getFaculty(): Faculty&lt;br&gt;+ hasFaculty(): boolean&lt;br&gt;+ assignFaculty(faculty: Faculty): void&lt;br&gt;+ toString(): String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cSection">
+          <mxGeometry y="154" width="560" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- ================= Faculty ================= -->
+        <mxCell id="cFaculty" value="Faculty&lt;br&gt;&lt;span style='font-weight:normal;font-size:12px'&gt;{final}&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;startSize=48;collapsible=0;html=1;whiteSpace=wrap;fontSize=14;fillColor=#DAE8FC;strokeColor=#6C8EBF;swimlaneFillColor=#FFFFFF;marginBottom=0;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="520" width="560" height="252" as="geometry"/>
+        </mxCell>
+        <mxCell id="fac_f" value="&lt;div style='line-height:18px'&gt;- facultyId: String {final}&lt;br&gt;- name: String {final}&lt;br&gt;- designation: String {final}&lt;br&gt;- facultyType: FacultyType {final}&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cFaculty">
+          <mxGeometry y="48" width="560" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="fac_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;html=1;" vertex="1" parent="cFaculty">
+          <mxGeometry y="128" width="560" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="fac_m" value="&lt;div style='line-height:18px'&gt;+ Faculty(facultyId: String, name: String, designation: String, facultyType: FacultyType)&lt;br&gt;+ getFacultyId(): String&lt;br&gt;+ getName(): String&lt;br&gt;+ getDesignation(): String&lt;br&gt;+ getFacultyType(): FacultyType&lt;br&gt;+ toString(): String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cFaculty">
+          <mxGeometry y="136" width="560" height="116" as="geometry"/>
+        </mxCell>
+
+        <!-- ================= FacultyType (enum) ================= -->
+        <mxCell id="eFT" value="&lt;span style='font-weight:normal;font-size:12px'&gt;&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;/span&gt;&lt;br&gt;FacultyType" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;startSize=48;collapsible=0;html=1;whiteSpace=wrap;fontSize=14;fillColor=#E1D5E7;strokeColor=#9673A6;swimlaneFillColor=#FFFFFF;marginBottom=0;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2540" y="600" width="180" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="eFT_c" value="&lt;div style='line-height:18px'&gt;PERMANENT&lt;br&gt;VISITING&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="eFT">
+          <mxGeometry y="48" width="180" height="44" as="geometry"/>
+        </mxCell>
+
+        <!-- ================= Office ================= -->
+        <mxCell id="cOffice" value="Office&lt;br&gt;&lt;span style='font-weight:normal;font-size:12px'&gt;{final}&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;startSize=48;collapsible=0;html=1;whiteSpace=wrap;fontSize=14;fillColor=#DAE8FC;strokeColor=#6C8EBF;swimlaneFillColor=#FFFFFF;marginBottom=0;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1080" width="320" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="off_f" value="&lt;div style='line-height:18px'&gt;- student: Student {final}&lt;br&gt;- section: Section {final}&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cOffice">
+          <mxGeometry y="48" width="320" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="off_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;html=1;" vertex="1" parent="cOffice">
+          <mxGeometry y="92" width="320" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="off_m" value="&lt;div style='line-height:18px'&gt;+ Office(student: Student, section: Section)&lt;br&gt;+ getStudent(): Student&lt;br&gt;+ getSection(): Section&lt;br&gt;+ toString(): String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;spacingTop=2;overflow=hidden;rotatable=0;html=1;whiteSpace=nowrap;fontSize=12;" vertex="1" parent="cOffice">
+          <mxGeometry y="100" width="320" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- ================= LEGEND ================= -->
+        <mxCell id="legend" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Solid line, open arrowhead = association (label = field name)&lt;br&gt;Dashed arrow = dependency from a driver&lt;br&gt;&lt;font color='#1F5FBF'&gt;blue: StudentDriver&lt;/font&gt; | &lt;font color='#2E8B57'&gt;green: FacultyDriver&lt;/font&gt; | &lt;font color='#D2691E'&gt;orange: SectionOfficeDriver&lt;/font&gt;&lt;br&gt;&lt;u&gt;Underlined&lt;/u&gt; = static member" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;strokeColor=#999999;fillColor=#FAFAFA;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1400" width="480" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- ================= ASSOCIATIONS ================= -->
+        <mxCell id="a1" value="sectionName" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#000000;labelBackgroundColor=#FFFFFF;fontSize=11;exitX=1;exitY=0.2662;exitDx=0;exitDy=0;entryX=0;entryY=0.3182;entryDx=0;entryDy=0;" edge="1" parent="1" source="cStudent" target="eSN">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a1_m" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="a1">
+          <mxGeometry x="0.75" relative="1" as="geometry"><mxPoint x="0" y="-12" as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="a2" value="sectionName" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#000000;labelBackgroundColor=#FFFFFF;fontSize=11;exitX=0;exitY=0.3549;exitDx=0;exitDy=0;entryX=1;entryY=0.3182;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSection" target="eSN">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a2_m" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="a2">
+          <mxGeometry x="0.75" relative="1" as="geometry"><mxPoint x="0" y="-12" as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="a3" value="faculty" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#000000;labelBackgroundColor=#FFFFFF;fontSize=11;exitX=1;exitY=0.4105;exitDx=0;exitDy=0;entryX=0;entryY=0.5278;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSection" target="cFaculty">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a3_m" value="0..1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="a3">
+          <mxGeometry x="0.75" relative="1" as="geometry"><mxPoint x="0" y="-12" as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="a4" value="facultyType" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#000000;labelBackgroundColor=#FFFFFF;fontSize=11;exitX=1;exitY=0.4563;exitDx=0;exitDy=0;entryX=0;entryY=0.3804;entryDx=0;entryDy=0;" edge="1" parent="1" source="cFaculty" target="eFT">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a4_m" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="a4">
+          <mxGeometry x="0.75" relative="1" as="geometry"><mxPoint x="0" y="-12" as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="a5" value="student" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#000000;labelBackgroundColor=#FFFFFF;fontSize=11;exitX=0;exitY=0.3389;exitDx=0;exitDy=0;entryX=0.9286;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cOffice" target="cStudent">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="580" y="1141"/></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a5_m" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="a5">
+          <mxGeometry x="0.85" relative="1" as="geometry"><mxPoint x="14" y="0" as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="a6" value="section" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#000000;labelBackgroundColor=#FFFFFF;fontSize=11;exitX=1;exitY=0.4389;exitDx=0;exitDy=0;entryX=0.0357;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cOffice" target="cSection">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="1120" y="1159"/></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a6_m" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="a6">
+          <mxGeometry x="0.9" relative="1" as="geometry"><mxPoint x="14" y="0" as="offset"/></mxGeometry>
+        </mxCell>
+
+        <!-- ================= DEPENDENCIES: StudentDriver (blue) ================= -->
+        <mxCell id="d1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#1F5FBF;exitX=0.2333;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSD" target="cStudent">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#1F5FBF;exitX=0.4;exitY=1;exitDx=0;exitDy=0;entryX=0.2222;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSD" target="eSN">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="300" y="470"/><mxPoint x="810" y="470"/></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#1F5FBF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.0714;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSD" target="cSection">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="360" y="440"/><mxPoint x="1140" y="440"/></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#1F5FBF;exitX=0.6;exitY=1;exitDx=0;exitDy=0;entryX=0.125;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSD" target="cFaculty">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="420" y="410"/><mxPoint x="1900" y="410"/></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#1F5FBF;exitX=0.7;exitY=1;exitDx=0;exitDy=0;entryX=0.1667;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSD" target="eFT">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="480" y="380"/><mxPoint x="2570" y="380"/></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#1F5FBF;exitX=0;exitY=0.5556;exitDx=0;exitDy=0;entryX=0;entryY=0.7778;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSD" target="cOffice">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="30" y="200"/><mxPoint x="30" y="1220"/></Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ================= DEPENDENCIES: FacultyDriver (green) ================= -->
+        <mxCell id="f1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#2E8B57;exitX=0.7667;exitY=1;exitDx=0;exitDy=0;entryX=0.6111;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cFD" target="eFT">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="f2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#2E8B57;exitX=0.2;exitY=1;exitDx=0;exitDy=0;entryX=0.8889;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cFD" target="eSN">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="2480" y="300"/><mxPoint x="930" y="300"/></Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ================= DEPENDENCIES: SectionOfficeDriver (orange) ================= -->
+        <mxCell id="s1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#D2691E;exitX=0.4;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSOD" target="cOffice">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="s2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#D2691E;exitX=0.06;exitY=0;exitDx=0;exitDy=0;entryX=0.4286;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSOD" target="cStudent">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="690" y="1340"/><mxPoint x="300" y="1340"/></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#D2691E;exitX=0.14;exitY=0;exitDx=0;exitDy=0;entryX=0.3333;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSOD" target="eSN">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="730" y="1300"/><mxPoint x="650" y="1300"/><mxPoint x="650" y="800"/><mxPoint x="830" y="800"/></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#D2691E;exitX=0.68;exitY=0;exitDx=0;exitDy=0;entryX=0.3571;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSOD" target="cSection">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="1000" y="1330"/><mxPoint x="1300" y="1330"/></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#D2691E;exitX=1;exitY=0.2885;exitDx=0;exitDy=0;entryX=0.3036;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSOD" target="cFaculty">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="2000" y="1450"/></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#D2691E;exitX=1;exitY=0.6731;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSOD" target="eFT">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="2630" y="1490"/></Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

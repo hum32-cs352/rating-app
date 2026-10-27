@@ -1,23 +1,31 @@
 A02 contributions - Team A02 The Innovators (Hum32@CS352)
+Student identity and teaching assignments - PR #2, branch team/A02
 
 Anas Arshad (publisher)
-- Student.java
-- Combined all files, created the team/A02 branch, committed, pushed
-  and opened the pull request.
-- test-results.txt, run_student.bat and the UML diagram
+- Student.java, including the enrolment-number revision (version 2)
+- StudentDriver.java, including the identity and enrolment checks
+- Collected the team's files; updated README.md and contributions.txt
+- Tested, pushed to team/A02 and opened PR #2
 
 Suleman
 - SectionName.java and FacultyType.java
-- Checked both enums and the source file names.
-
-Zaid Khan
-- StudentDriver.java
-- demo-input.txt and expected_output.txt
+- FacultyDriver.java (switch statements and the "INVALID" input check)
+- Checked both enums and the source file names
 
 Muhammad Arqam
 - Faculty.java and Section.java
-- Checked their signatures and teacher assignment.
+- SectionOfficeDriver.java (shared Faculty, Office, assign/replace/restore)
+- section_office_objects.drawio (references before and after replacement)
+- Checked the Faculty and Section signatures
+
+Zaid Khan
+- student_api_register.xlsx (every public constructor and method)
+- sources.txt (nine Java files) and test-results.txt
+- demo-input.txt and expected_output.txt
+- Prepared the input, output, test results and member credits
 
 Hafiz Muhammad Ahsan
-- Office.java
-- Tested a fresh clone of the published branch.
+- Office.java and run_student.bat
+- A02_UML.drawio (complete updated module, including enrolmentNo)
+- Tested a fresh clone of the published branch (fresh-clone test and
+  JDK 17 verification, with the results posted on PR #2)
