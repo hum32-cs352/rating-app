@@ -1,0 +1,46 @@
+C04 Acceptance Results (Section 6) - Aown, JDK 17
+Tested code: folder "C04_test_folder-beforefinal" (pre-final zip from team lead). To be rerun on the final commit when it is available.
+Tested commit (git rev-parse HEAD): NOT AVAILABLE - tested folder had no git history
+java -version: openjdk version "17.0.20.1" 2026-08-18 (Temurin-17.0.20.1+1)
+javac -version: javac 17.0.20.1
+A02 commit: 649211bdc5bfc6a815204c403c4530946c2e1e3d    B05 commit: 66ba565c4a827ef58e988319c66727d7c4c0bd23
+(A02 PR #2 and B05 PR #4 commits as recorded by Affan in Section 1 of C04_responsibilities_edited.pdf; they match the downloaded zip folder names)
+Tester: Aown Ali   Date: 2026-10-31
+Command run (Windows cmd): handoff\C04\assessment\run_assessment.bat
+Rule: an unperformed check must say NOT RUN, never PASS.
+
+ID  | Required result (short)                                               | Actual result                                                  | PASS/FAIL/NOT RUN
+----|-----------------------------------------------------------------------|----------------------------------------------------------------|------------------
+T01 | A02 v2, B05 and C04 compile and run; A02 drivers and B05 demo pass    | C04 (with A02 Student/SectionName + B05 files): compiled and   | PASS
+    |                                                                       | ran via run_assessment.bat. A02 (javac --release 17): Main,    |
+    |                                                                       | StudentDriver "A02 READY", FacultyDriver completed,            |
+    |                                                                       | SectionOfficeDriver "A02 SectionOffice READY". B05: Main and   |
+    |                                                                       | ReflectionDriver "B05 LOCAL READY" (seat B25110006026)         |
+T02 | Schedule and identifier rules (null/equal/reversed, blank/padded)     | ScheduleCheck printed PASS                                     | PASS
+T03 | ReflectionRecord retains objects; mismatches fail; evidence=sourceRef | RecordCheck and LinkCheck printed PASS                         | PASS
+T04 | Pilot 3 x 1; two forms; one missing; reordering changes nothing       | MatrixCheck PASS; driver showed Rows: 3 | Columns: 1           | PASS
+T05 | Missing stays null; "None" stays "None"; B05 answers unchanged        | MatrixCheck PASS; driver showed "None" for Affan's Q2          | PASS
+T06 | Duplicates, wrong context, outside records, different object fail     | MatrixCheck printed PASS                                       | PASS
+T07 | Index checks; select [A3, A1] gives 3 x 2                             | MatrixCheck printed PASS                                       | PASS
+T08 | Input/selection copies; IDs unmodifiable; bad selections fail         | MatrixCheck printed PASS                                       | PASS
+T09 | 0x0, 3x0, 0x3; empty selection N x 0; B05 empty detail 0 x 6          | MatrixCheck printed PASS                                       | PASS
+T10 | Detail 3 x 6: Affan None, Aown Once, missing form all null            | Driver: Rows 3 | Columns 6; Affan None; Aown Once;             | PASS
+    |                                                                       | Abdul Rehman six "-" cells                                     |
+T11 | "Not recorded"; "Received / verification pending"; no marks           | Driver showed both texts; no marks/stars/bonus printed         | PASS
+T12 | Test-only Direct A2/A3 beside A1; Direct selection by type            | MatrixCheck printed PASS                                       | PASS
+T13 | Deliberate failing check: nonzero exit, demo skipped; restore, pass   | Disposable copy, RecordCheck forced to throw: FAIL line, demo  | PASS
+    |                                                                       | skipped, "BUILD, CHECK OR RUN FAILED", %ERRORLEVEL% = 1;       |
+    |                                                                       | original folder rerun: all five PASS and demo ran              |
+T14 | Purposes retained; null fails; filters [A1,A3] and [A2,A3]            | MatrixCheck and ReflectionCheck printed PASS                   | PASS
+
+Notes:
+- T-number to check-class mapping for T02 and T04-T09, T12, T14 comes from comments in the source code.
+  T03 is mapped to RecordCheck/LinkCheck from the README's check descriptions.
+- PASS means the covering check printed PASS in the run above; individual rules inside a check are not printed.
+- T01 note: A02's StudentDriver reads three lines from standard input (seat, name, section label).
+
+Recommendation: READY TO MERGE
+Justification: T01-T14 all PASS in real Windows runs on JDK 17 (T13 included: nonzero exit, demo skipped, restore passes). No check failed.
+Condition: this applies to the tested pre-final folder ("C04_test_folder-beforefinal"), which had no git history, so the tested commit could not be recorded.
+If Affan's final pushed C04 files differ from the tested folder, rerun and recheck before relying on this recommendation.
+Findings: B05 package is domain.reflection, not pilot.b05 (already listed under "Changes made" in README; PR link pending).

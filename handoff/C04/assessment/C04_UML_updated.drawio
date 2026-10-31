@@ -1,0 +1,403 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="Assessment_hierarchy" name="Assessment hierarchy">
+    <mxGraphModel dx="1110" dy="760" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1110" pageHeight="760">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Assessment" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;C04 | pilot.c04.assessment&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;i&gt;Assessment&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;{abstract}&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;- id: String&lt;br&gt;- courseCode: String&lt;br&gt;- semester: String&lt;br&gt;- sectionName: SectionName [A02]&lt;br&gt;- purpose: Purpose&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;&lt;i&gt;+ getName(): String&lt;/i&gt;&lt;br&gt;+ getId(): String&lt;br&gt;+ getCourseCode(): String&lt;br&gt;+ getSemester(): String&lt;br&gt;+ getSectionName(): SectionName&lt;br&gt;+ getPurpose(): Purpose&lt;br&gt;+ getSchedule(): Schedule&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FFFFFF;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="375" y="10" width="330" height="315" as="geometry" />
+        </mxCell>
+        <mxCell id="Purpose" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;C04 | pilot.c04.assessment&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;&amp;laquo;enumeration&amp;raquo;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;Purpose&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;FORMATIVE&lt;br&gt;SUMMATIVE&lt;br&gt;BOTH&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FFFFFF;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="25" y="30" width="270" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="Schedule" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;C04 | pilot.c04.assessment&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;Schedule&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;- startsAt: LocalDateTime&lt;br&gt;- endsAt: LocalDateTime&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;+ getStartsAt(): LocalDateTime&lt;br&gt;+ getEndsAt(): LocalDateTime&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FFFFFF;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="800" y="30" width="270" height="157" as="geometry" />
+        </mxCell>
+        <mxCell id="Direct" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;C04 | pilot.c04.assessment&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;i&gt;Direct&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;{abstract}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FFFFFF;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="250" y="355" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Indirect" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;C04 | pilot.c04.assessment&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;i&gt;Indirect&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;{abstract}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FFFFFF;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="790" y="355" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Final" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;Future team&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;Final&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;{planned}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FAFAFA;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="15" y="515" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Mid" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;Future team&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;Mid&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;{planned}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FAFAFA;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="155" y="515" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Lab" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;Future team&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;Lab&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;{planned}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FAFAFA;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="295" y="515" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Viva" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;Future team&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;Viva&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;{planned}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FAFAFA;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="435" y="515" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Project" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;Future team&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;Project&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;{planned}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FAFAFA;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="575" y="515" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Reflection" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;C04 | pilot.c04.assessment&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;Reflection&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;+ getName(): String&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FFFFFF;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="790" y="485" width="280" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Behavior" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;Future team&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;InClassBehavior&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;{planned}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FAFAFA;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="790" y="630" width="280" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Bonus" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;Future grading rule&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;Bonus&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;{planned}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FAFAFA;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="555" y="640" width="170" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="edge14" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;exitX=0.5;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.25757575757575757;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="Direct" target="Assessment">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="355" as="sourcePoint" />
+            <mxPoint x="460" y="325" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="375" y="340" />
+              <mxPoint x="460" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge15" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;exitX=0.5;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.7575757575757576;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="Indirect" target="Assessment">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="930" y="355" as="sourcePoint" />
+            <mxPoint x="625" y="325" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="930" y="340" />
+              <mxPoint x="625" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge16" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;exitX=0.5;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="Final" target="Direct">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="515" as="sourcePoint" />
+            <mxPoint x="375" y="425" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="80" y="465" />
+              <mxPoint x="375" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge17" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;exitX=0.5;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="Mid" target="Direct">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="515" as="sourcePoint" />
+            <mxPoint x="375" y="425" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="465" />
+              <mxPoint x="375" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge18" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;exitX=0.5;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lab" target="Direct">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="515" as="sourcePoint" />
+            <mxPoint x="375" y="425" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="465" />
+              <mxPoint x="375" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge19" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;exitX=0.5;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="Viva" target="Direct">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="515" as="sourcePoint" />
+            <mxPoint x="375" y="425" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500" y="465" />
+              <mxPoint x="375" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge20" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;exitX=0.5;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="Project" target="Direct">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="515" as="sourcePoint" />
+            <mxPoint x="375" y="425" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="465" />
+              <mxPoint x="375" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge21" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;exitX=0.5;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="Reflection" target="Indirect">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="930" y="485" as="sourcePoint" />
+            <mxPoint x="930" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge22" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;exitX=1.0;exitY=0.506667;exitDx=0;exitDy=0;entryX=0.8214285714285714;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="Behavior" target="Indirect">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="668" as="sourcePoint" />
+            <mxPoint x="1020" y="425" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1090" y="668" />
+              <mxPoint x="1090" y="450" />
+              <mxPoint x="1020" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge23" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=open;dashed=1;exitX=0.0;exitY=0.269841;exitDx=0;exitDy=0;entryX=1.0;entryY=0.448276;entryDx=0;entryDy=0;" edge="1" parent="1" source="Assessment" target="Purpose">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="95" as="sourcePoint" />
+            <mxPoint x="295" y="95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label24" value="uses" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="319.25390625" y="64" width="34.4921875" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="edge25" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=none;exitX=1.0;exitY=0.279365;exitDx=0;exitDy=0;entryX=0.0;entryY=0.433121;entryDx=0;entryDy=0;" edge="1" parent="1" source="Assessment" target="Schedule">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="705" y="98" as="sourcePoint" />
+            <mxPoint x="800" y="98" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label26" value="schedule" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="723.111328125" y="66" width="60.77734375" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="label27" value="0..*" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="709" y="105" width="26.49169921875" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="label28" value="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="105" width="13.99853515625" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="edge29" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=none;exitX=0.5;exitY=1.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=0.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="Project" target="Bonus">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="590" as="sourcePoint" />
+            <mxPoint x="640" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label30" value="bonusRule" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="648" y="605" width="70.08203125" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="label31" value="0..*" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="608" y="592" width="26.49169921875" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="label32" value="0..1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="608" y="624" width="27.990234375" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="label33" value="Lab = Final Lab Examination" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="23" y="615" width="215.46337890625003" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="label34" value="Final = Final Theory Examination" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=13;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="23" y="638" width="222.66162109375003" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="label35" value="One column = one activity object, e.g. A1 Reflection." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12.5;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="23" y="666.5" width="339.36083984375" height="18.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge36" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="25" y="715" as="sourcePoint" />
+            <mxPoint x="85" y="715" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label37" value="extends" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="98" y="705" width="55.046875" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="edge38" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="715" as="sourcePoint" />
+            <mxPoint x="300" y="715" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label39" value="association" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="313" y="705" width="74.470703125" height="18" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Matrix_and_student_records" name="Matrix and student records">
+    <mxGraphModel dx="1110" dy="1110" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1110" pageHeight="1110">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Matrix" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;B05 | domain.reflection&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;&amp;laquo;interface&amp;raquo;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;Matrix&amp;lt;T&amp;gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;+ rows(): int; cols(): int&lt;br&gt;+ getRowIds(): List&amp;lt;String&amp;gt;&lt;br&gt;+ getColumnIds(): List&amp;lt;String&amp;gt;&lt;br&gt;+ get(row: int, col: int): T&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#F1F1F1;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="25" y="25" width="270" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="Student" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;A02 | domain | PR 2 v2&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;Student&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;- seatNo: String&lt;br&gt;- name: String&lt;br&gt;- enrolmentNo: String [0..1]&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;+ getSeatNo(): String&lt;br&gt;+ getName(): String&lt;br&gt;+ getSectionName(): SectionName&lt;br&gt;+ getEnrolmentNo(): String&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FFFFFF;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="360" y="25" width="300" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="Assessment" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;C04 | hierarchy on previous page&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;i&gt;Assessment&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;{abstract}&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;- id: String&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;&lt;i&gt;+ getName(): String&lt;/i&gt;&lt;br&gt;+ getId(): String&lt;br&gt;+ getCourseCode(): String&lt;br&gt;+ getSemester(): String&lt;br&gt;+ getSectionName(): SectionName&lt;br&gt;+ getPurpose(): Purpose&lt;br&gt;+ getSchedule(): Schedule&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FFFFFF;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="775" y="25" width="300" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="MatrixImpl" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;C04 | pilot.c04.assessment&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;AssessmentMatrix&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;- students: List&amp;lt;Student&amp;gt;&lt;br&gt;- assessments: List&amp;lt;Assessment&amp;gt;&lt;br&gt;- cells: AssessmentRecord[][]&lt;br&gt;- courseCode, semester: String&lt;br&gt;- sectionName: SectionName&lt;br&gt;- rowIds, columnIds: List&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;+ get(row: int, col: int):&lt;br&gt;  AssessmentRecord&lt;br&gt;+ getStudent(row: int): Student&lt;br&gt;+ getAssessment(col: int): Assessment&lt;br&gt;+ getCourseCode(): String&lt;br&gt;+ getSemester(): String&lt;br&gt;+ getSectionName(): SectionName&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FFFFFF;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="25" y="320" width="270" height="305" as="geometry" />
+        </mxCell>
+        <mxCell id="Record" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;C04 | pilot.c04.assessment&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;i&gt;AssessmentRecord&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;{abstract}&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;- student: Student&lt;br&gt;- assessment: Assessment&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;+ getStudent(): Student&lt;br&gt;+ getAssessment(): Assessment&lt;br&gt;&lt;i&gt;+ getEvidenceReference(): String&lt;/i&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FFFFFF;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="360" y="320" width="300" height="187" as="geometry" />
+        </mxCell>
+        <mxCell id="B05view" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;B05 | domain.reflection&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;ReflectionMatrixView&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;+ get(row: int, col: int): String&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#F1F1F1;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="775" y="320" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="View" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;C04 | pilot.c04.assessment&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;AssessmentView&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;- source: AssessmentMatrix&lt;br&gt;- selectedColumnIds: List&amp;lt;String&amp;gt;&lt;br&gt;- sourceColumns: int[]&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;+ get(row: int, col: int):&lt;br&gt;  AssessmentRecord&lt;br&gt;+ getStudent(row: int): Student&lt;br&gt;+ getAssessment(col: int): Assessment&lt;br&gt;+ getCourseCode(): String&lt;br&gt;+ getSemester(): String&lt;br&gt;+ getSectionName(): SectionName&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FFFFFF;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="25" y="715" width="270" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="RefRecord" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;C04 | pilot.c04.assessment&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;ReflectionRecord&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;- submittedAt: LocalDateTime [0..1]&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;+ getPortfolio(): StudentPortfolio&lt;br&gt;+ getSubmittedAt(): LocalDateTime&lt;br&gt;+ getEvidenceReference(): String&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#FFFFFF;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="360" y="680" width="300" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="Portfolio" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;B05 | domain.reflection&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;StudentPortfolio&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;- seatNo: String&lt;br&gt;- courseCode: String&lt;br&gt;- termId: String&lt;br&gt;- sourceRef: String&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;+ getSeatNo(): String&lt;br&gt;+ getCourseCode(): String&lt;br&gt;+ getTermId(): String&lt;br&gt;+ getSourceRef(): String&lt;br&gt;+ getReflection(): SelfReflection&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#F1F1F1;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="775" y="640" width="300" height="212" as="geometry" />
+        </mxCell>
+        <mxCell id="SelfReflection" value="&lt;div style=&quot;text-align:center;font-size:11px&quot;&gt;B05 | domain.reflection&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:16px&quot;&gt;&lt;b&gt;SelfReflection&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;- answers: Map&lt;br&gt;  &amp;lt;ReflectionQuestion, String&amp;gt;&lt;br&gt;- remarks: String&lt;/div&gt;&lt;div style=&quot;border-top:1px solid #333;padding:6px 8px;font-size:12px&quot;&gt;+ getAnswer(q: ReflectionQuestion): String&lt;br&gt;+ getRemarks(): String&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeColor=#333333;fillColor=#F1F1F1;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="775" y="895" width="300" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="edge11" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;dashed=1;exitX=0.5;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="MatrixImpl" target="Matrix">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="320" as="sourcePoint" />
+            <mxPoint x="160" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label12" value="T = AssessmentRecord" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11.5;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="173" y="277.5" width="140.40673828125" height="17.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge13" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;dashed=1;exitX=0.0;exitY=0.208333;exitDx=0;exitDy=0;entryX=0.0;entryY=0.442424;entryDx=0;entryDy=0;" edge="1" parent="1" source="View" target="Matrix">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="25" y="765" as="sourcePoint" />
+            <mxPoint x="25" y="98" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="5" y="765" />
+              <mxPoint x="5" y="98" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge14" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;dashed=1;exitX=1.0;exitY=0.500000;exitDx=0;exitDy=0;entryX=0.5;entryY=0.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="B05view" target="Matrix">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1075" y="370" as="sourcePoint" />
+            <mxPoint x="160" y="25" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1095" y="370" />
+              <mxPoint x="1095" y="5" />
+              <mxPoint x="160" y="5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label15" value="T = String" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11.5;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="715" y="2.5" width="65.291748046875" height="17.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge16" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=none;exitX=0.5;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="View" target="MatrixImpl">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="715" as="sourcePoint" />
+            <mxPoint x="160" y="625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label17" value="source" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="168" y="661" width="47.11328125" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="label18" value="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="142" y="630" width="13.99853515625" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="label19" value="0..*" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="126" y="690" width="26.49169921875" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="edge20" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=none;exitX=1.0;exitY=0.311475;exitDx=0;exitDy=0;entryX=0.0;entryY=0.508021;entryDx=0;entryDy=0;" edge="1" parent="1" source="MatrixImpl" target="Record">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="295" y="415" as="sourcePoint" />
+            <mxPoint x="360" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label21" value="cells" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="313.5498046875" y="382" width="33.900390625" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="label22" value="0..*" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="295" y="421" width="26.49169921875" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="label23" value="0..*" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="333" y="421" width="26.49169921875" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="edge24" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=none;exitX=0.5;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="Record" target="Student">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="320" as="sourcePoint" />
+            <mxPoint x="510" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label25" value="student" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=13;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="518" y="260" width="56.69580078125001" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="label26" value="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="491" y="234" width="13.99853515625" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="label27" value="0..*" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="475" y="297" width="26.49169921875" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="edge28" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=none;exitX=1.0;exitY=0.187166;exitDx=0;exitDy=0;entryX=0.0;entryY=0.269565;entryDx=0;entryDy=0;" edge="1" parent="1" source="Record" target="Assessment">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="355" as="sourcePoint" />
+            <mxPoint x="775" y="87" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="355" />
+              <mxPoint x="710" y="87" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label29" value="assessment" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="675.4365234375" y="252" width="78.126953125" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="label30" value="0..*" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="664" y="331" width="26.49169921875" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="label31" value="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="754" y="67" width="13.99853515625" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="edge32" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=block;endFill=0;exitX=0.5;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="RefRecord" target="Record">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="680" as="sourcePoint" />
+            <mxPoint x="510" y="507" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label33" value="{assessment is Reflection}" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11.5;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="429.4849853515625" y="585" width="164.030029296875" height="17.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge34" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=none;exitX=1.0;exitY=0.303030;exitDx=0;exitDy=0;entryX=0.0;entryY=0.424528;entryDx=0;entryDy=0;" edge="1" parent="1" source="RefRecord" target="Portfolio">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="730" as="sourcePoint" />
+            <mxPoint x="775" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label35" value="portfolio" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="690.9130859375" y="695" width="57.173828125" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="label36" value="0..*" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="666" y="737" width="26.49169921875" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="label37" value="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="754" y="737" width="13.99853515625" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="edge38" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=none;exitX=0.5;exitY=1.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=0.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="B05view" target="Portfolio">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="925" y="420" as="sourcePoint" />
+            <mxPoint x="925" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label39" value="portfoliosBySeat" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11.5;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="931" y="521" width="101.700927734375" height="17.5" as="geometry" />
+        </mxCell>
+        <mxCell id="label40" value="0..*" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="893" y="427" width="26.49169921875" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="label41" value="0..*" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="893" y="620" width="26.49169921875" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="edge42" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#333333;endArrow=none;exitX=0.5;exitY=1.000000;exitDx=0;exitDy=0;entryX=0.5;entryY=0.000000;entryDx=0;entryDy=0;" edge="1" parent="1" source="Portfolio" target="SelfReflection">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="925" y="852" as="sourcePoint" />
+            <mxPoint x="925" y="895" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label43" value="reflection" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12;fontStyle=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="932" y="864" width="63.841796875" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="label44" value="0..*" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="893" y="856" width="26.49169921875" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="label45" value="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="908" y="877" width="13.99853515625" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="label46" value="Plain line = association. Student is not a superclass." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12.5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="23" y="969.5" width="377.3125" height="18.5" as="geometry" />
+        </mxCell>
+        <mxCell id="label47" value="One overview per course, semester and section; all matrices reuse B05 Matrix&amp;lt;T&amp;gt;." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=12.5;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="23" y="992.5" width="530.779296875" height="18.5" as="geometry" />
+        </mxCell>
+        <mxCell id="label48" value="1 one; 0..* any number; 0..1 optional.  + public; - private.  Italic = abstract." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11.5;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="23" y="1015.5" width="441.888671875" height="17.5" as="geometry" />
+        </mxCell>
+      <mxCell id="note_matrix" value="Matrix&amp;lt;T&amp;gt; methods rows(), cols(), getRowIds(), getColumnIds() and get() are implemented by AssessmentMatrix and AssessmentView." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=visible;fontFamily=Helvetica;fontSize=11.5;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="23" y="1038.5" width="600" height="18.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
