@@ -1,0 +1,106 @@
+CS-352 — C04 Assessment Module
+Team Contributions Report
+
+Project: Rating App
+Module: C04 Assessment
+Repository: https://github.com/hum32-cs352/rating-app
+Branch: team/C04-assessment
+
+Note: This report records assigned responsibilities and contribution evidence.
+Actual working hours are approximately calculated.
+
+------------------------------------------------------------
+
+1. Abdul Rehman
+
+Assigned tasks:
+- Implemented Assessment.java and Schedule.java.
+- Created ScheduleCheck.java.
+- Maintained C04_API_REGISTER.xlsx.
+
+Evidence:
+- Source files: [https://github.com/hum32-cs352/rating-app/tree/team/C04-assessment]
+- Actual Working Hours = 3
+------------------------------------------------------------
+
+2. Asad
+
+Assigned tasks:
+- Implemented Purpose.java, Direct.java, Indirect.java and Reflection.java.
+- Created ReflectionCheck.java.
+
+Evidence:
+- Source files: [https://github.com/hum32-cs352/rating-app/tree/team/C04-assessment]
+- Actual Working Hours = 3
+
+------------------------------------------------------------
+
+3. Abeer
+
+Assigned tasks:
+- Implemented AssessmentRecord.java.
+- Created RecordCheck.java.
+
+Evidence:
+- Source files: [https://github.com/hum32-cs352/rating-app/tree/team/C04-assessment]
+- Actual Working Hours = 3
+
+------------------------------------------------------------
+
+4. Anas Nasir
+
+Assigned tasks:
+- Implemented ReflectionRecord.java.
+- Created LinkCheck.java.
+- Updated C04_UML.drawio.
+
+Evidence:
+- Source files and UML: [https://github.com/hum32-cs352/rating-app/tree/team/C04-assessment]
+- Actual Working Hours = 3.5
+
+------------------------------------------------------------
+
+5. Moonis Nasir
+
+Assigned tasks:
+- Implemented AssessmentMatrix.java and AssessmentView.java.
+- Created MatrixCheck.java.
+
+Evidence:
+- Source files: [https://github.com/hum32-cs352/rating-app/tree/team/C04-assessment]
+- Actual Working Hours = 4
+
+------------------------------------------------------------
+
+6. Affan Rauf
+
+Assigned tasks:
+- Created AssessmentDriver.java for the three-student reflection pilot and six-question detail.
+- Supplied sources.txt, run_assessment.bat and README.md.
+- Collected team contributions and personal evidence.
+- Coordinated the C04 handoff.
+- Coordinated with A02 and B05
+
+Evidence:
+- Source and handoff files: [https://github.com/hum32-cs352/rating-app/tree/team/C04-assessment]
+- Actual Working Hours = 4.5
+
+------------------------------------------------------------
+
+7. Aown
+
+Assigned tasks:
+- Created AssessmentChecks.java.
+- Independently tested the module using JDK 17.
+- Recorded test results and provided the merge recommendation.
+- Retested the merged integration commit.
+
+Evidence:
+- Source files and test evidence: [https://github.com/hum32-cs352/rating-app/tree/team/C04-assessment]
+- Actual Working Hours = 3.5
+
+------------------------------------------------------------
+
+Final verification
+
+Final test status: [PASS]
