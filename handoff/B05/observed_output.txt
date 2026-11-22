@@ -1,0 +1,77 @@
+C:\Users\HP\Desktop\rating-app>java -version
+openjdk version "17.0.18" 2026-01-20
+OpenJDK Runtime Environment Temurin-17.0.18+8 (build 17.0.18+8)
+OpenJDK 64-Bit Server VM Temurin-17.0.18+8 (build 17.0.18+8, mixed mode, sharing)
+
+C:\Users\HP\Desktop\rating-app>javac -version
+javac 17.0.18
+
+C:\Users\HP\Desktop\rating-app>run.bat
+Hum32@CS352 starter runs successfully.
+Press any key to continue . . .
+
+C:\Users\HP\Desktop\rating-app>handoff\B05\run_demo.bat
+Enter seat number:
+12
+
+Study pattern:
+  1) Consistent from week 1
+  2) Became consistent later
+  3) Not consistent overall
+Enter a number (or press Enter to skip):
+1
+
+Consultations:
+  1) Once
+  2) Twice
+  3) Thrice
+  4) None
+Enter a number (or press Enter to skip):
+1
+
+Key issue:
+  1) Time management
+  2) Technical setup
+  3) Attendance
+  4) Personal
+  5) Other
+Enter a number (or press Enter to skip):
+1
+
+Reading habit:
+  1) Regular textbook
+  2) Occasional textbook
+  3) Mostly slides & class notes
+  4) Videos
+Enter a number (or press Enter to skip):
+1
+
+Coding strength:
+  1) Positive
+  2) Struggling
+  3) Negative
+Enter a number (or press Enter to skip):
+1
+
+Expected midterm:
+  1) A
+  2) B
+  3) C
+  4) D
+Enter a number (or press Enter to skip):
+1
+Remarks (press Enter to leave empty):
+good
+
+=== B05 Local Reflection Matrix ===
+Practice answers - not an official student submission
+Seat: 12 | Course: CS-352 | Term: 2026-Semester-II
+Rows: 1 | Columns: 6
+Study pattern: Consistent from week 1
+Consultations: Once
+Key issue: Time management
+Reading habit: Regular textbook
+Coding strength: Positive
+Expected midterm: A
+[PASS] All required local checks
+B05 LOCAL READY | Reflection matrix verified
